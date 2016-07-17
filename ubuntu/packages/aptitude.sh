@@ -31,6 +31,7 @@ spotify-client
 virtualbox
 gnome-keyring
 trimage
+thunderbird
 
 
 # FTP Clients
