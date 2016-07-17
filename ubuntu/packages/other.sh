@@ -92,14 +92,3 @@ if [[ ! -f "$FILENAME" ]] ; then
     cd Skype-Electron
     ./build.sh
 fi
-
-
-FILENAME="/usr/bin/nylas"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Nylas"
-    cd ~ && wget "https://edgehill.nylas.com/download?platform=linux-deb&_ga=1.167205374.1936420286.1464677012" -O "N1.deb"
-    sudo dpkg -i N1.deb
-    sudo apt-get -f install
-    rm N1.deb
-    echo
-fi
