@@ -32,6 +32,7 @@ virtualbox
 gnome-keyring
 trimage
 thunderbird
+sshpass
 
 
 # FTP Clients
