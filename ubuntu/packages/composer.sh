@@ -10,6 +10,7 @@ packagelist=(
 
 laravel/installer
 laravel/envoy=~1.0
+fabpot/php-cs-fixer
 
 )
 
