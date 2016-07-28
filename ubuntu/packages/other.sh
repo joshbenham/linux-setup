@@ -92,3 +92,14 @@ if [[ ! -f "$FILENAME" ]] ; then
     cd Skype-Electron
     ./build.sh
 fi
+
+FILENAME="/usr/bin/screamingfrogseospider"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing ScreamingFrog"
+    cd ~ && wget "https://www.screamingfrog.co.uk/products/seo-spider/screamingfrogseospider_6.0_all.deb" -O "screamfrogseospider_6.0_all.deb"
+    sudo dpkg -i screamfrogseospider_6.0_all.deb
+    sudo apt-get -f install
+    rm screamfrogseospider_6.0_all.deb
+    echo
+fi
+
