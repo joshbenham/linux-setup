@@ -3,7 +3,7 @@
 ask_question " <- Do you want to update the Repositories? [y|n] "
 
 if said_yes ; then
-    sudo sudo apt-get update
+    sudo apt update
 fi
 
 
@@ -125,4 +125,4 @@ phpmyadmin
 
 )
 
-sudo apt-get install ${packagelist[@]}
+sudo apt install ${packagelist[@]}
