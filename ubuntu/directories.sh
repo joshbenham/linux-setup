@@ -38,3 +38,13 @@ if said_yes ; then
     COMMAND="ln -sf /media/$NAME/Data/.password-store /home/$NAME/.password-store"
     $COMMAND
 fi
+
+
+ask_question " <- Would you like to setup the Thunderbird folder [y|n] "
+echo
+
+if said_yes ; then
+    NAME=`whoami`
+    COMMAND="ln -sf /media/$NAME/Data/.thunderbird /home/$NAME/.thunderbird"
+    $COMMAND
+fi
