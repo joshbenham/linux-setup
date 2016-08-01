@@ -18,6 +18,7 @@ stow
 curl
 ctags
 htop
+httpie
 unrar
 glances
 qtpass
