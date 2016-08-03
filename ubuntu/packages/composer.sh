@@ -10,9 +10,10 @@ packagelist=(
 
 laravel/installer
 laravel/envoy=~1.0
-fabpot/php-cs-fixer
+friendsofphp/php-cs-fixer
+phpmd/phpmd
 squizlabs/php_codesniffer=*
 
 )
 
-composer global require  ${packagelist[@]}
+sudo composer global require  ${packagelist[@]}
