@@ -14,6 +14,7 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  ubuntu-composer         Install Composer Packages"
     echo "  ubuntu-bower            Install Bower Packages"
     echo "  ubuntu-node             Install Node Packages"
+    echo "  ubuntu-atom             Install Atom Packages"
     echo "  ubuntu-other            Install Other Packages (Source/Copy)"
 fi
 
@@ -47,6 +48,10 @@ fi
 
 if [[ $1 = "ubuntu-node" ]] ; then
     source ubuntu/packages/node.sh
+fi
+
+if [[ $1 = "ubuntu-atom" ]] ; then
+    source ubuntu/packages/atom.sh
 fi
 
 if [[ $1 = "ubuntu-other" ]] ; then
