@@ -16,6 +16,19 @@ file-icons
 highlight-line
 
 
+# GIT
+# ------------------------
+
+git-plus
+blame
+
+
+# LANGUAGES
+# ------------------------
+
+language-blade
+
+
 # PHP
 # ------------------------
 
@@ -45,12 +58,6 @@ linter-less
 linter-scss-lint
 linter-tidy
 linter-htmlhint
-
-
-# LANGUAGES
-# ------------------------
-
-language-blade
 
 )
 
