@@ -34,6 +34,7 @@ gnome-keyring
 trimage
 thunderbird
 sshpass
+powertop
 
 
 # FTP Clients
