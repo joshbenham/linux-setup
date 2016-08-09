@@ -14,6 +14,7 @@ minimap
 color-picker
 file-icons
 highlight-line
+csscomb
 
 
 # GIT
