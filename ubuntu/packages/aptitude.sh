@@ -35,6 +35,7 @@ trimage
 thunderbird
 sshpass
 powertop
+tig
 
 
 # FTP Clients
