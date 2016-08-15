@@ -20,6 +20,16 @@ if said_yes ; then
 fi
 
 
+ask_question " <- Would you like to setup the Documents folder [y|n] "
+echo
+
+if said_yes ; then
+    NAME=`whoami`
+    COMMAND="ln -sf /media/$NAME/Data/Documents /home/$NAME/Documents"
+    $COMMAND
+fi
+
+
 ask_question " <- Would you like to setup the Backups folder [y|n] "
 echo
 
