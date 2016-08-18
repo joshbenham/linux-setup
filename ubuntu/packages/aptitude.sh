@@ -98,6 +98,7 @@ php-gettext
 php7.0-cgi
 php7.0-curl
 php7.0-gd
+php7.0-intl
 php7.0-json
 php7.0-mbstring
 php7.0-mcrypt
@@ -105,6 +106,7 @@ php7.0-mysql
 php7.0-soap
 php7.0-sqlite3
 php7.0-xml
+php7.0-xmlrpc
 php7.0-zip
 php7.0
 libapache2-mod-php7.0
@@ -112,6 +114,7 @@ libapache2-mod-php7.0
 php5.6-cgi
 php5.6-curl
 php5.6-gd
+php5.6-intl
 php5.6-json
 php5.6-mbstring
 php5.6-mcrypt
@@ -119,6 +122,7 @@ php5.6-mysql
 php5.6-soap
 php5.6-sqlite3
 php5.6-xml
+php5.6-xmlrpc
 php5.6-zip
 php5.6
 libapache2-mod-php5.6
