@@ -15,6 +15,7 @@ color-picker
 file-icons
 highlight-line
 csscomb
+opened-files
 
 
 # GIT
