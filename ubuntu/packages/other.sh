@@ -59,6 +59,17 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="/usr/bin/steam"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Steam"
+    cd ~ && wget "https://steamcdn-a.akamaihd.net/client/installer/steam.deb" -O "steam.deb"
+    sudo dpkg -i steam.deb
+    sudo apt-get -f install
+    rm steam.deb
+    echo
+fi
+
+
 FILENAME="$HOME/.bash_it/install.sh"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Bash-It"
