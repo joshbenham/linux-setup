@@ -36,6 +36,7 @@ thunderbird
 sshpass
 powertop
 tig
+klinkstatus
 
 
 # FTP Clients
