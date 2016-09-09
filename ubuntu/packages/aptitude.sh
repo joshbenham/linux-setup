@@ -137,6 +137,7 @@ php5.6
 libapache2-mod-php5.6
 
 phpmyadmin
+mysql-workbench
 
 )
 
