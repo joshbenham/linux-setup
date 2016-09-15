@@ -12,6 +12,12 @@ if said_yes ; then
 fi
 
 
+ask_question " <- Do you want to install the Go repository? [y|n] "
+if said_yes ; then
+    sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
+fi
+
+
 ask_question " <- Do you want to install the GIT repository? [y|n] "
 if said_yes ; then
     sudo add-apt-repository ppa:git-core/ppa
