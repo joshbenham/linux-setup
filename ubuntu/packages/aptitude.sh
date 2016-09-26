@@ -37,6 +37,7 @@ sshpass
 powertop
 tig
 klinkstatus
+silversearcher-ag
 
 
 # FTP Clients
