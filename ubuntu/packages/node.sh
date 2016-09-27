@@ -29,6 +29,8 @@ npm-check
 gulp
 bower
 electron-packager
+speed-test
+vtop
 
 
 # SYNTAX
