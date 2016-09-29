@@ -14,6 +14,7 @@ packagelist=(
 # TOOLS
 # ------------------------
 
+zsh
 stow
 curl
 ctags

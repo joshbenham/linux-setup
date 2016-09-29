@@ -84,6 +84,15 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="$HOME/.zprezto/init.zsh"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing zprezto"
+    cd ~
+    git clone --recursive https://github.com/sorin-ionescu/prezto.git "${ZDOTDIR:-$HOME}/.zprezto"
+    echo
+fi
+
+
 FILENAME="$HOME/.fzf/install"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing FZF"
