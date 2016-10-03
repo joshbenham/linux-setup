@@ -21,7 +21,6 @@ ctags
 htop
 httpie
 unrar
-glances
 qtpass
 bash-builtins
 bash-completion
@@ -59,6 +58,7 @@ libnotify-bin
 # ------------------------
 
 composer
+python-pip
 
 
 # BROWSERS
