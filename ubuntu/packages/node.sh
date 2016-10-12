@@ -25,6 +25,7 @@ packagelist=(
 # TOOLS
 # ------------------------
 
+yarn
 npm-check
 gulp
 bower
