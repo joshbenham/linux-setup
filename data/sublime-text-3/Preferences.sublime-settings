@@ -26,6 +26,7 @@
 		"app/storage/logs",
 		"app/storage/views",
 		"app/storage/debugbar",
+		"app/storage/sessions",
 		"node_modules",
 		"bower_components",
 		"vendor"
@@ -48,5 +49,6 @@
 	],
 	"theme": "Spacegray.sublime-theme",
 	"translate_tabs_to_spaces": true,
-	"trim_trailing_white_space_on_save": true
+	"trim_trailing_white_space_on_save": true,
+	"update_check": false
 }
