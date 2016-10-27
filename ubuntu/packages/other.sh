@@ -70,6 +70,17 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="/opt/wmail-desktop/WMail"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Steam"
+    cd ~ && wget "https://github.com/Thomas101/wmail/releases/download/v2.0.0/WMail_2_0_0_linux_x86_64.deb" -O "WMail_2_0_0_linux_x86_64.deb"
+    sudo dpkg -i WMail_2_0_0_linux_x86_64.deb
+    sudo apt-get -f install
+    rm WMail_2_0_0_linux_x86_64.deb
+    echo
+fi
+
+
 FILENAME="$HOME/.bash_it/install.sh"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Bash-It"
