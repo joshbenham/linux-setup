@@ -38,6 +38,7 @@ powertop
 tig
 klinkstatus
 silversearcher-ag
+gettext
 
 
 # FTP Clients
@@ -111,6 +112,7 @@ mysql-server
 mysql-client
 
 php-gettext
+php-mbstring
 
 php7.0-cgi
 php7.0-curl

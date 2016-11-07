@@ -48,6 +48,12 @@ if said_yes ; then
 fi
 
 
+ask_question " <- Do you want to install the PHPMyAdmin repository? [y|n] "
+if said_yes ; then
+    sudo add-apt-repository ppa:nijel/phpmyadmin
+fi
+
+
 ask_question " <- Do you want to install the Spotify repository? [y|n] "
 if said_yes ; then
     sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys BBEBDCB318AD50EC6865090613B00F1FD2C19886
