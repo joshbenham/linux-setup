@@ -39,6 +39,7 @@ tig
 klinkstatus
 silversearcher-ag
 gettext
+goaccess
 
 
 # FTP Clients

@@ -8,6 +8,7 @@ packagelist=(
 # ------------------------
 
 glances
+httpstat
 
 )
 
