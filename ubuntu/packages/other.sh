@@ -95,6 +95,16 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="$HOME/.nerd_fonts/install.sh"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline "-> Installing Nerd-Fonts"
+    cd ~
+    git clone --depth=1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd_fonts
+    ~/.nerd_fonts/install.sh
+    echo
+fi
+
+
 FILENAME="$HOME/.zprezto/init.zsh"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing zprezto"
