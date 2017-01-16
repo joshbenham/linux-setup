@@ -40,6 +40,7 @@ klinkstatus
 silversearcher-ag
 gettext
 goaccess
+filelight
 
 
 # FTP Clients
