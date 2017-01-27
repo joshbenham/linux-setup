@@ -41,6 +41,7 @@ silversearcher-ag
 gettext
 goaccess
 filelight
+vlc
 
 
 # FTP Clients
