@@ -33,6 +33,9 @@ if [[ $1 = "ubuntu-packages" ]] ; then
     source ubuntu/packages/composer.sh
     source ubuntu/packages/bower.sh
     source ubuntu/packages/node.sh
+    source ubuntu/packages/python.sh
+    source ubuntu/packages/go.sh
+    source ubuntu/packages/atom.sh
     source ubuntu/packages/other.sh
 fi
 
