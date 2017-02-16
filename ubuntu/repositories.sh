@@ -1,60 +1,30 @@
 #!/bin/bash
 
-ask_question " <- Do you want to install the Kubuntu Backports repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:kubuntu-ppa/backports
-fi
+declare -A repositorylist
+repositorylist=(
 
+# Backports
+[kubuntu-ppa/backports]=ppa:kubuntu-ppa/backports
 
-ask_question " <- Do you want to install the PHP repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:ondrej/php
-fi
+# Tools
+[ondrej/php]=ppa:ondrej/php
+[git-core/ppa]=ppa:git-core/ppa
+[ubuntu-lxc/lxd-stable]=ppa:ubuntu-lxc/lxd-stable
+[dawidd0811/neofetch]=ppa:dawidd0811/neofetch
 
+# Apps
+[libreoffice/ppa]=ppa:libreoffice/ppa
+[ubuntu-mozilla-daily/ppa]=ppa:ubuntu-mozilla-daily/ppa
+[webupd8team/sublime-text-3]=ppa:webupd8team/sublime-text-3
+[webupd8team/atom]=ppa:webupd8team/atom
+[nijel/phpmyadmin]=ppa:nijel/phpmyadmin
+)
 
-ask_question " <- Do you want to install the Go repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:ubuntu-lxc/lxd-stable
-fi
-
-
-ask_question " <- Do you want to install the GIT repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:git-core/ppa
-fi
-
-
-ask_question " <- Do you want to install the Firefox Nightly repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:ubuntu-mozilla-daily/ppa
-fi
-
-
-ask_question " <- Do you want to install the LibreOffice repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:libreoffice/ppa
-fi
-
-
-ask_question " <- Do you want to install the Atom Editor repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:webupd8team/atom
-fi
-
-
-ask_question " <- Do you want to install the Sublime Text 3 repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:webupd8team/sublime-text-3
-fi
-
-
-ask_question " <- Do you want to install the PHPMyAdmin repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:nijel/phpmyadmin
-fi
-
-
-ask_question " <- Do you want to install the Neofetch repository? [y|n] "
-if said_yes ; then
-    sudo add-apt-repository ppa:dawidd0811/neofetch
-fi
+for key in "${!repositorylist[@]}" ; do
+    if ! grep -q "$key" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
+        ask_question " <- Do you want to install the ${repositorylist[$key]} repository? [y|n] "
+        if said_yes ; then
+            sudo add-apt-repository ${repositorylist[$key]}
+        fi
+    fi
+done
