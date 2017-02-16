@@ -70,16 +70,13 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
-FILENAME="$HOME/.bash_it/install.sh"
+FILENAME="/usr/bin/screamingfrogseospider"
 if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Bash-It"
-    cd ~
-    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-    ~/.bash_it/install.sh
-    source ~/.bashrc
-    bash-it enable completions bash-it git gulp npm ssh system
-    bash-it enable plugins alias-completion base fzf git
-    bash-it enable alias general apt curl git laravel npm vim
+    headline " -> Installing ScreamingFrog"
+    cd ~ && wget "https://www.screamingfrog.co.uk/products/seo-spider/screamingfrogseospider_6.0_all.deb" -O "screamfrogseospider_6.0_all.deb"
+    sudo dpkg -i screamfrogseospider_6.0_all.deb
+    sudo apt-get -f install
+    rm screamfrogseospider_6.0_all.deb
     echo
 fi
 
@@ -90,6 +87,20 @@ if [[ ! -f "$FILENAME" ]] ; then
     cd ~
     git clone --depth=1 https://github.com/ryanoasis/nerd-fonts.git ~/.nerd_fonts
     ~/.nerd_fonts/install.sh
+    echo
+fi
+
+
+FILENAME="$HOME/.bash_it/install.sh"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Bash-It"
+    cd ~
+    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
+    ~/.bash_it/install.sh
+    source ~/.bashrc
+    bash-it enable completions bash-it git gulp npm ssh system
+    bash-it enable plugins alias-completion base fzf git
+    bash-it enable alias general apt curl git laravel npm vim
     echo
 fi
 
@@ -112,24 +123,3 @@ if [[ ! -f "$FILENAME" ]] ; then
     source ~/.bashrc
     echo
 fi
-
-
-FILENAME="$HOME/Applications/Skype-Electron/build.sh"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Skype Electron"
-    cd ~/Applications
-    git clone --depth=1 https://github.com/GyozaGuy/Skype-Electron.git
-    cd Skype-Electron
-    ./build.sh
-fi
-
-FILENAME="/usr/bin/screamingfrogseospider"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing ScreamingFrog"
-    cd ~ && wget "https://www.screamingfrog.co.uk/products/seo-spider/screamingfrogseospider_6.0_all.deb" -O "screamfrogseospider_6.0_all.deb"
-    sudo dpkg -i screamfrogseospider_6.0_all.deb
-    sudo apt-get -f install
-    rm screamfrogseospider_6.0_all.deb
-    echo
-fi
-
