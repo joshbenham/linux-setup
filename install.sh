@@ -9,12 +9,13 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  help                    Show the help"
     echo "  ubuntu-directories      Set up the Directories"
     echo "  ubuntu-repositories     Install Ubuntu Repositories"
-    echo "  ubuntu-packages         Install Packages (Aptitude/Bower/Node)"
+    echo "  ubuntu-packages         Install All Packages"
     echo "  ubuntu-aptitude         Install Aptitude Packages"
     echo "  ubuntu-composer         Install Composer Packages"
     echo "  ubuntu-bower            Install Bower Packages"
     echo "  ubuntu-node             Install Node Packages"
     echo "  ubuntu-python           Install Python Packages"
+    echo "  ubuntu-go               Install Go Packages"
     echo "  ubuntu-atom             Install Atom Packages"
     echo "  ubuntu-other            Install Other Packages (Source/Copy)"
 fi
@@ -53,6 +54,10 @@ fi
 
 if [[ $1 = "ubuntu-python" ]] ; then
     source ubuntu/packages/python.sh
+fi
+
+if [[ $1 = "ubuntu-go" ]] ; then
+    source ubuntu/packages/go.sh
 fi
 
 if [[ $1 = "ubuntu-atom" ]] ; then
