@@ -1,18 +1,27 @@
 #!/bin/bash
 
 declare -A repositorylist
+
 repositorylist=(
 
 # Backports
+# ------------------------
+
 [kubuntu-ppa/backports]=ppa:kubuntu-ppa/backports
 
+
 # Tools
+# ------------------------
+
 [ondrej/php]=ppa:ondrej/php
 [git-core/ppa]=ppa:git-core/ppa
 [ubuntu-lxc/lxd-stable]=ppa:ubuntu-lxc/lxd-stable
 [dawidd0811/neofetch]=ppa:dawidd0811/neofetch
 
+
 # Apps
+# ------------------------
+
 [libreoffice/ppa]=ppa:libreoffice/ppa
 [ubuntu-mozilla-daily/ppa]=ppa:ubuntu-mozilla-daily/ppa
 [webupd8team/sublime-text-3]=ppa:webupd8team/sublime-text-3
