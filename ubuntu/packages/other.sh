@@ -105,6 +105,15 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="$HOME/.oh-my-zsh/oh-my-zsh.sh"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing oh-my-zsh"
+    cd ~
+    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+    echo
+fi
+
+
 FILENAME="$HOME/.fzf/install"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing FZF"
