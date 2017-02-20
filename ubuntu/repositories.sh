@@ -27,6 +27,7 @@ repositorylist=(
 [webupd8team/sublime-text-3]=ppa:webupd8team/sublime-text-3
 [webupd8team/atom]=ppa:webupd8team/atom
 [nijel/phpmyadmin]=ppa:nijel/phpmyadmin
+[qbittorrent]=ppa:qbittorrent-team/qbittorrent-stable
 )
 
 for key in "${!repositorylist[@]}" ; do

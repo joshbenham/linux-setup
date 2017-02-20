@@ -42,6 +42,7 @@ gettext
 goaccess
 filelight
 vlc
+qbittorrent
 
 
 # FTP Clients
