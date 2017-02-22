@@ -9,6 +9,7 @@ packagelist=(
 
 glances
 httpstat
+clint
 
 )
 
