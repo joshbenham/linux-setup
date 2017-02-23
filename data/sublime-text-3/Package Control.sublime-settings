@@ -6,14 +6,11 @@
 	"installed_packages":
 	[
 		"All Autocomplete",
-		"Bootstrap 3 Snippets",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"CSS Format",
-		"CSScomb",
 		"CTags",
 		"DocBlockr",
-		"Dotfiles Syntax Highlighting",
 		"FileDiffs",
 		"Git",
 		"GitGutter",
@@ -21,7 +18,6 @@
 		"Javascript Beautify",
 		"JSHint Gutter",
 		"larastrap-snippets",
-		"Laravel 4 Artisan",
 		"Laravel Blade Highlighter",
 		"LESS",
 		"Package Control",
