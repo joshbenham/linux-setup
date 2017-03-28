@@ -82,14 +82,6 @@ vim-gtk
 atom
 sublime-text-installer
 
-# KDEVELOP
-# ------------------------
-
-kdevelop
-kdevelop-php
-kdevelop-php-docs
-kdev-python
-
 
 # GRAPHICAL
 # ------------------------
