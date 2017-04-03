@@ -104,8 +104,8 @@ golang
 
 apache2
 
-mysql-server
-mysql-client
+# mysql-server
+# mysql-client
 
 php-gettext
 php-mbstring
