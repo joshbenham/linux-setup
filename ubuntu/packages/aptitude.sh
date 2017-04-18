@@ -49,7 +49,6 @@ qbittorrent
 # ------------------------
 
 filezilla
-kftpgrabber
 
 
 # LIBRARIES
