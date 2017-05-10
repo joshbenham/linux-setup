@@ -15,6 +15,7 @@ packagelist=(
 # ------------------------
 
 zsh
+fish
 stow
 curl
 ctags

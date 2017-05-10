@@ -118,6 +118,15 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="$HOME/.local/share/omf/init.fish"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing oh-my-fish"
+    cd ~
+    curl -L http://get.oh-my.fish | fish
+    echo
+fi
+
+
 FILENAME="$HOME/.fzf/install"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing FZF"
