@@ -25,6 +25,7 @@ unrar
 qtpass
 bash-builtins
 bash-completion
+fonts-powerline
 scrot
 screenfetch
 neofetch
