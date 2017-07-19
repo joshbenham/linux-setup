@@ -7,7 +7,6 @@
 	[
 		"AdvancedNewFile",
 		"All Autocomplete",
-		"Blade Spacer",
 		"BracketHighlighter",
 		"Color Highlighter",
 		"CSS Format",
@@ -22,6 +21,7 @@
 		"JSHint Gutter",
 		"larastrap-snippets",
 		"Laravel Blade Highlighter",
+		"Laravel Blade Spacer",
 		"LESS",
 		"Package Control",
 		"PHP Companion",
