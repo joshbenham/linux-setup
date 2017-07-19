@@ -11,6 +11,7 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  ubuntu-repositories     Install Ubuntu Repositories"
     echo "  ubuntu-packages         Install All Packages"
     echo "  ubuntu-aptitude         Install Aptitude Packages"
+    echo "  ubuntu-snaps            Install Snaps Packages"
     echo "  ubuntu-composer         Install Composer Packages"
     echo "  ubuntu-bower            Install Bower Packages"
     echo "  ubuntu-node             Install Node Packages"
@@ -41,6 +42,10 @@ fi
 
 if [[ $1 = "ubuntu-aptitude" ]] ; then
     source ubuntu/packages/aptitude.sh
+fi
+
+if [[ $1 = "ubuntu-snaps" ]] ; then
+    source ubuntu/packages/snaps.sh
 fi
 
 if [[ $1 = "ubuntu-composer" ]] ; then
