@@ -32,12 +32,14 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 12,
 	"highlight_line": true,
 	"ignored_packages":
 	[
 		"Vintage"
 	],
+	"line_padding_bottom": 3,
+	"line_padding_top": 3,
 	"rulers":
 	[
 		72,
