@@ -32,12 +32,9 @@
 		"Sass",
 		"SublimeCodeIntel",
 		"SublimeLinter",
-		"SublimeLinter-annotations",
 		"SublimeLinter-contrib-lessc",
-		"SublimeLinter-csslint",
 		"SublimeLinter-jshint",
 		"SublimeLinter-json",
-		"SublimeLinter-php",
 		"SublimeLinter-phpcs",
 		"Theme - Spacegray"
 	],
