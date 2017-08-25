@@ -32,6 +32,7 @@ bower
 electron-packager
 speed-test
 vtop
+gtop
 
 
 # SYNTAX
