@@ -63,7 +63,6 @@ libnotify-bin
 # PACKAGE MANAGERS
 # ------------------------
 
-composer
 python-pip
 
 
