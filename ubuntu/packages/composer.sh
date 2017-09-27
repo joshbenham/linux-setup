@@ -13,8 +13,8 @@ if said_yes ; then
     source ~/.bashrc
 fi
 
-headline " -> Installing Composer Packages"
 
+headline " -> Installing Composer Packages"
 
 packagelist=(
 

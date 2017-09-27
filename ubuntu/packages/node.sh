@@ -1,21 +1,12 @@
 #!/bin/bash
 
-headline " -> Installing Node Aptitude Packages"
+ask_question " <- Do you want to install/update Node? [y|n] "
 
-packagelist=(
-
-# TOOLS
-# ------------------------
-
-nodejs
-npm
-)
-sudo apt-get install ${packagelist[@]}
-
-
-headline " -> Mapping nodejs to node"
-
-sudo ln -sf /usr/bin/nodejs /usr/bin/node
+if said_yes ; then
+    curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+    sudo apt-get install -y nodejs
+    source ~/.bashrc
+fi
 
 
 headline " -> Installing Node Packages"
@@ -25,8 +16,9 @@ packagelist=(
 # TOOLS
 # ------------------------
 
-yarn
+npm
 npm-check
+yarn
 gulp
 bower
 electron-packager
