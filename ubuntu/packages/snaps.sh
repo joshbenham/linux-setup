@@ -7,8 +7,6 @@ packagelist=(
 # TOOLS
 # ------------------------
 
-hiri
-
 )
 
 sudo snap install ${packagelist[@]}
