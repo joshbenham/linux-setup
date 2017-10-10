@@ -18,6 +18,12 @@ headline " -> Installing Composer Packages"
 
 packagelist=(
 
+# FASTER COMPOSER
+# ------------------------
+
+hirak/prestissimo
+
+
 # TOOLS
 # ------------------------
 
