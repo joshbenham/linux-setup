@@ -14,8 +14,8 @@ repositorylist=(
 # ------------------------
 
 [ondrej/php]=ppa:ondrej/php
+[ondrej/apache2]=ppa:ondrej/apache2
 [git-core/ppa]=ppa:git-core/ppa
-[ubuntu-lxc/lxd-stable]=ppa:ubuntu-lxc/lxd-stable
 [dawidd0811/neofetch]=ppa:dawidd0811/neofetch
 
 
@@ -28,7 +28,6 @@ repositorylist=(
 [webupd8team/atom]=ppa:webupd8team/atom
 [nijel/phpmyadmin]=ppa:nijel/phpmyadmin
 [qbittorrent]=ppa:qbittorrent-team/qbittorrent-stable
-[kritalime]=ppa:kritalime/ppa
 
 )
 
