@@ -89,7 +89,6 @@ sublime-text-installer
 kcolorchooser
 karbon
 kolourpaint4
-krita
 kazam
 
 
