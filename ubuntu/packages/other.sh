@@ -5,14 +5,6 @@ headline " -> Mapping PHP5.6 to PHP"
 sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
 
 
-FILENAME="$HOME/.dropbox-dist/dropboxd"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Dropbox"
-    cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf -
-    echo
-fi
-
-
 headline " -> Setting up Sublime Text 3 packages"
 
 DIRECTORY="$HOME/.config/sublime-text-3/Installed Packages"
