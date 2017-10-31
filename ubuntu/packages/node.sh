@@ -22,6 +22,7 @@ yarn
 gulp
 bower
 electron-packager
+lighthouse
 speed-test
 vtop
 gtop
