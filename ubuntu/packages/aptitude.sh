@@ -29,7 +29,6 @@ fonts-powerline
 scrot
 screenfetch
 neofetch
-ack-grep
 spotify-client
 virtualbox
 gnome-keyring
@@ -147,3 +146,8 @@ mysql-workbench
 )
 
 sudo apt install ${packagelist[@]}
+
+
+headline " -> Mapping Silversearch to ACK"
+
+sudo ln -sf /usr/bin/ag /usr/bin/ack
