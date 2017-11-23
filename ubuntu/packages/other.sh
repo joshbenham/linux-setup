@@ -66,10 +66,10 @@ fi
 FILENAME="/opt/wavebox/Wavebox"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Wavebox"
-    cd ~ && wget "https://github.com/wavebox/waveboxapp/releases/download/v3.1.2/Wavebox_3_1_2_linux_x86_64.deb" -O "Wavebox_3_1_2_linux_x86_64.deb"
-    sudo dpkg -i Wavebox_3_1_2_linux_x86_64.deb
-    sudo apt-get -f install
-    rm Wavebox_3_1_2_linux_x86_64.deb
+    sudo wget -qO - https://wavebox.io/dl/client/repo/archive.key | sudo apt-key add -
+    echo "deb https://wavebox.io/dl/client/repo/ x86_64/" | sudo tee --append /etc/apt/sources.list.d/repo.list
+    sudo apt update
+    sudo apt install wavebox
     echo
 fi
 
