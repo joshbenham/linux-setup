@@ -7,6 +7,8 @@ packagelist=(
 # TOOLS
 # ------------------------
 
+mailspring
+
 )
 
 sudo snap install ${packagelist[@]}
