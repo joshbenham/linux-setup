@@ -10,6 +10,7 @@ packagelist=(
 glances
 httpstat
 clint
+codemod
 
 )
 
