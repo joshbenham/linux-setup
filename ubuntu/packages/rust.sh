@@ -27,6 +27,7 @@ headline " -> Installing Rust Cargo Packages"
 packagelist=(
 
 racer
+rustsym
 rustfmt
 clippy
 
