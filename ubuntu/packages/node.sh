@@ -34,6 +34,7 @@ gtop
 jshint
 stylelint
 postcss
+eslint
 
 )
 
