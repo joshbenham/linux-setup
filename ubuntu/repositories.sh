@@ -26,8 +26,8 @@ repositorylist=(
 [ubuntu-mozilla-daily/ppa]=ppa:ubuntu-mozilla-daily/ppa
 [webupd8team/sublime-text-3]=ppa:webupd8team/sublime-text-3
 [webupd8team/atom]=ppa:webupd8team/atom
-[nijel/phpmyadmin]=ppa:nijel/phpmyadmin
 [qbittorrent]=ppa:qbittorrent-team/qbittorrent-stable
+[otto-kesselgulasch/gimp]=ppa:otto-kesselgulasch/gimp
 
 )
 

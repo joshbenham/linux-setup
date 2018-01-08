@@ -27,7 +27,6 @@ bash-builtins
 bash-completion
 fonts-powerline
 scrot
-screenfetch
 neofetch
 spotify-client
 virtualbox
@@ -41,14 +40,8 @@ klinkstatus
 silversearcher-ag
 gettext
 goaccess
-filelight
 vlc
 qbittorrent
-
-
-# FTP Clients
-# ------------------------
-
 filezilla
 
 
@@ -85,6 +78,7 @@ sublime-text
 # GRAPHICAL
 # ------------------------
 
+gimp
 kcolorchooser
 karbon
 kolourpaint4
