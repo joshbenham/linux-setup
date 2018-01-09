@@ -17,8 +17,7 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  ubuntu-node             Install Node Packages"
     echo "  ubuntu-python           Install Python Packages"
     echo "  ubuntu-go               Install Go Packages"
-    echo "  ubuntu-rust               Install Rust Packages"
-    echo "  ubuntu-atom             Install Atom Packages"
+    echo "  ubuntu-rust             Install Rust Packages"
     echo "  ubuntu-other            Install Other Packages (Source/Copy)"
 fi
 
@@ -32,12 +31,13 @@ fi
 
 if [[ $1 = "ubuntu-packages" ]] ; then
     source ubuntu/packages/aptitude.sh
+    source ubuntu/packages/snaps.sh
     source ubuntu/packages/composer.sh
     source ubuntu/packages/bower.sh
     source ubuntu/packages/node.sh
     source ubuntu/packages/python.sh
     source ubuntu/packages/go.sh
-    source ubuntu/packages/atom.sh
+    source ubuntu/packages/rust.sh
     source ubuntu/packages/other.sh
 fi
 
@@ -71,10 +71,6 @@ fi
 
 if [[ $1 = "ubuntu-rust" ]] ; then
     source ubuntu/packages/rust.sh
-fi
-
-if [[ $1 = "ubuntu-atom" ]] ; then
-    source ubuntu/packages/atom.sh
 fi
 
 if [[ $1 = "ubuntu-other" ]] ; then

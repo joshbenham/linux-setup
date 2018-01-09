@@ -25,7 +25,6 @@ repositorylist=(
 [libreoffice/ppa]=ppa:libreoffice/ppa
 [ubuntu-mozilla-daily/ppa]=ppa:ubuntu-mozilla-daily/ppa
 [webupd8team/sublime-text-3]=ppa:webupd8team/sublime-text-3
-[webupd8team/atom]=ppa:webupd8team/atom
 [qbittorrent]=ppa:qbittorrent-team/qbittorrent-stable
 [otto-kesselgulasch/gimp]=ppa:otto-kesselgulasch/gimp
 

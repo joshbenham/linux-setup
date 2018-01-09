@@ -71,7 +71,6 @@ chromium-browser
 
 vim
 vim-gtk
-atom
 sublime-text
 
 
