@@ -104,7 +104,7 @@ if [[ ! -f "$FILENAME" ]] ; then
     source ~/.bashrc
     bash-it enable completions bash-it git gulp npm ssh system
     bash-it enable plugins alias-completion base fzf git
-    bash-it enable alias general apt curl git laravel npm vim
+    bash-it enable alias general apt curl git npm vim
     echo
 fi
 
