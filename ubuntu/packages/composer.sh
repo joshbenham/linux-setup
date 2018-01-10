@@ -24,12 +24,18 @@ packagelist=(
 hirak/prestissimo
 
 
-# TOOLS
+# LARAVEL
 # ------------------------
 
 laravel/installer
 laravel/envoy=~1.0
+
+
+# TESTING
+# ------------------------
+
 friendsofphp/php-cs-fixer
+phpunit/phpunit
 phpmd/phpmd
 squizlabs/php_codesniffer=*
 phploc/phploc=*

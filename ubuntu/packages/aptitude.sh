@@ -100,6 +100,7 @@ apache2
 
 php-gettext
 php-mbstring
+php-xdebug
 
 php7.1-cgi
 php7.1-curl
