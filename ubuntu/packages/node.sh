@@ -35,6 +35,7 @@ jshint
 stylelint
 postcss
 eslint
+eslint-plugin-vue
 
 )
 
