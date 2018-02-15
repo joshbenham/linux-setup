@@ -101,21 +101,21 @@ apache2
 php-gettext
 php-mbstring
 
-php7.1-cgi
-php7.1-curl
-php7.1-gd
-php7.1-intl
-php7.1-json
-php7.1-mbstring
-php7.1-mcrypt
-php7.1-mysql
-php7.1-soap
-php7.1-sqlite3
-php7.1-xml
-php7.1-xmlrpc
-php7.1-zip
-php7.1
-libapache2-mod-php7.1
+php7.0-cgi
+php7.0-curl
+php7.0-gd
+php7.0-intl
+php7.0-json
+php7.0-mbstring
+php7.0-mcrypt
+php7.0-mysql
+php7.0-soap
+php7.0-sqlite3
+php7.0-xml
+php7.0-xmlrpc
+php7.0-zip
+php7.0
+libapache2-mod-php7.0
 
 php5.6-cgi
 php5.6-curl
