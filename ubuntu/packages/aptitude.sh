@@ -117,6 +117,21 @@ php7.0-zip
 php7.0
 libapache2-mod-php7.0
 
+php7.2-cgi
+php7.2-curl
+php7.2-gd
+php7.2-intl
+php7.2-json
+php7.2-mbstring
+php7.2-mysql
+php7.2-soap
+php7.2-sqlite3
+php7.2-xml
+php7.2-xmlrpc
+php7.2-zip
+php7.2
+libapache2-mod-php7.2
+
 php5.6-cgi
 php5.6-curl
 php5.6-gd
