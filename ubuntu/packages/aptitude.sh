@@ -99,6 +99,7 @@ apache2
 # mysql-client
 
 php-gettext
+php-imagick
 php-mbstring
 
 php7.0-cgi
