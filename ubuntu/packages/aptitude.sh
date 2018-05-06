@@ -26,7 +26,6 @@ bash-builtins
 bash-completion
 scrot
 neofetch
-spotify-client
 virtualbox
 gnome-keyring
 trimage
