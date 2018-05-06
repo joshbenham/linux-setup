@@ -24,7 +24,6 @@ unrar
 qtpass
 bash-builtins
 bash-completion
-fonts-powerline
 scrot
 neofetch
 spotify-client
