@@ -10,16 +10,6 @@ if said_yes ; then
 fi
 
 
-ask_question " <- Would you like to setup the Tasks folder [y|n] "
-echo
-
-if said_yes ; then
-    NAME=`whoami`
-    COMMAND="ln -sf /media/$NAME/Data/Tasks /home/$NAME/Tasks"
-    $COMMAND
-fi
-
-
 ask_question " <- Would you like to setup the Applications folder [y|n] "
 echo
 
