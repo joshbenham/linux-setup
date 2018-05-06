@@ -98,18 +98,6 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
-FILENAME="$HOME/.oh-my-zsh/oh-my-zsh.sh"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing oh-my-zsh"
-    cd ~
-    sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
-    git clone git://github.com/zsh-users/zsh-autosuggestions $ZSH_CUSTOM/plugins/zsh-autosuggestions
-    git clone git://github.com/zsh-users/zsh-syntax-highlighting $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-    git clone git://github.com/zsh-users/zsh-completions $ZSH_CUSTOM/plugins/zsh-completions
-    echo
-fi
-
-
 FILENAME="$HOME/.local/share/omf/init.fish"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing oh-my-fish"

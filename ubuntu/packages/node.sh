@@ -21,11 +21,6 @@ npm-check
 yarn
 gulp
 bower
-electron-packager
-lighthouse
-speed-test
-vtop
-gtop
 
 
 # SYNTAX

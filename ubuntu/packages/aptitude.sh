@@ -14,7 +14,6 @@ packagelist=(
 # TOOLS
 # ------------------------
 
-zsh
 fish
 stow
 curl
@@ -33,13 +32,9 @@ virtualbox
 gnome-keyring
 trimage
 thunderbird
-sshpass
-powertop
-tig
 klinkstatus
 silversearcher-ag
 gettext
-goaccess
 vlc
 qbittorrent
 filezilla
@@ -79,8 +74,6 @@ sublime-text
 
 gimp
 kcolorchooser
-karbon
-kolourpaint4
 kazam
 
 
