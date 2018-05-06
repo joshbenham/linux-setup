@@ -84,20 +84,6 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
-FILENAME="$HOME/.bash_it/install.sh"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Bash-It"
-    cd ~
-    git clone --depth=1 https://github.com/Bash-it/bash-it.git ~/.bash_it
-    ~/.bash_it/install.sh
-    source ~/.bashrc
-    bash-it enable completions bash-it git gulp npm ssh system
-    bash-it enable plugins alias-completion base fzf git
-    bash-it enable alias general apt curl git npm vim
-    echo
-fi
-
-
 FILENAME="$HOME/.local/share/omf/init.fish"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing oh-my-fish"
