@@ -27,7 +27,6 @@ bash-completion
 scrot
 neofetch
 virtualbox
-gnome-keyring
 trimage
 thunderbird
 klinkstatus
