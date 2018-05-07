@@ -80,8 +80,8 @@ kazam
 
 apache2
 
-mysql-client
-mysql-server
+# mysql-client
+# mysql-server
 
 php-gettext
 php-imagick
