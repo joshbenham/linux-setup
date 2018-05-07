@@ -80,8 +80,8 @@ kazam
 
 apache2
 
-# mysql-client
-# mysql-server
+mysql-client
+mysql-server
 
 php-gettext
 php-imagick
@@ -120,6 +120,7 @@ libapache2-mod-php7.2
 
 phpmyadmin
 mysql-workbench
+mysqltuner
 
 )
 
