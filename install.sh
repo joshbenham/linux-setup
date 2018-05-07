@@ -7,7 +7,7 @@ echo
 if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "Usage:"
     echo "  help                    Show the help"
-    echo "  ubuntu-install          Install Everything"
+    echo "  ubuntu                  Install Everything"
     echo "  ubuntu-directories      Set up the Directories"
     echo "  ubuntu-repositories     Install Ubuntu Repositories"
     echo "  ubuntu-aptitude         Install Aptitude Packages"
@@ -19,7 +19,7 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  ubuntu-other            Install Other Packages (Source/Copy)"
 fi
 
-if [[ $1 = "ubuntu-install" ]] ; then
+if [[ $1 = "ubuntu" ]] ; then
     source ubuntu/directories.sh
     source ubuntu/repositories.sh
     source ubuntu/packages/aptitude.sh
