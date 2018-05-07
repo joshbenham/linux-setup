@@ -10,25 +10,25 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "  ubuntu                  Install Everything"
     echo "  ubuntu-directories      Set up the Directories"
     echo "  ubuntu-repositories     Install Ubuntu Repositories"
+    echo "  ubuntu-other            Install Other Packages (Source/Copy)"
     echo "  ubuntu-aptitude         Install Aptitude Packages"
     echo "  ubuntu-deb              Install Deb Packages"
     echo "  ubuntu-composer         Install Composer Packages"
     echo "  ubuntu-node             Install Node Packages"
     echo "  ubuntu-python           Install Python Packages"
     echo "  ubuntu-snap             Install Snap Packages"
-    echo "  ubuntu-other            Install Other Packages (Source/Copy)"
 fi
 
 if [[ $1 = "ubuntu" ]] ; then
     source ubuntu/directories.sh
     source ubuntu/repositories.sh
+    source ubuntu/packages/other.sh
     source ubuntu/packages/aptitude.sh
     source ubuntu/packages/deb.sh
     source ubuntu/packages/composer.sh
     source ubuntu/packages/node.sh
     source ubuntu/packages/python.sh
     source ubuntu/packages/snap.sh
-    source ubuntu/packages/other.sh
 fi
 
 if [[ $1 = "ubuntu-directories" ]] ; then
@@ -37,6 +37,10 @@ fi
 
 if [[ $1 = "ubuntu-repositories" ]] ; then
     source ubuntu/repositories.sh
+fi
+
+if [[ $1 = "ubuntu-other" ]] ; then
+    source ubuntu/packages/other.sh
 fi
 
 if [[ $1 = "ubuntu-aptitude" ]] ; then
@@ -61,10 +65,6 @@ fi
 
 if [[ $1 = "ubuntu-snap" ]] ; then
     source ubuntu/packages/snap.sh
-fi
-
-if [[ $1 = "ubuntu-other" ]] ; then
-    source ubuntu/packages/other.sh
 fi
 
 echo
