@@ -83,6 +83,17 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
+FILENAME="$HOME/.config/fish/functions/fisher.fish"
+if [[ ! -e "$FILENAME" ]]; then
+    headline " -> Installing Fisher"
+    curl -Lo "$FILENAME" --create-dirs https://git.io/fisher
+fi
+
+
+headline " -> Installing Fisher Packages"
+fish -c "fisher install fzf edc/bass hauleth/agnoster"
+
+
 FILENAME="$HOME/.fzf/install"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing FZF"
