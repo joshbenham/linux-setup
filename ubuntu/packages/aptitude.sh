@@ -86,8 +86,8 @@ golang
 
 apache2
 
-# mysql-server
-# mysql-client
+mysql-client
+mysql-server
 
 php-gettext
 php-imagick

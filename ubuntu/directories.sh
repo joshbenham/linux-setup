@@ -1,7 +1,8 @@
 #!/bin/bash
 
-NAME=`whoami` 
+NAME=`whoami`
 FOLDERS=(
+
 ".password-store"
 ".thunderbird"
 
@@ -17,6 +18,7 @@ FOLDERS=(
 "Public"
 "Templates"
 "Videos"
+
 )
 
 for FOLDER in "${FOLDERS[@]}"; do
