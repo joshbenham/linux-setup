@@ -1,10 +1,5 @@
 #!/bin/bash
 
-headline " -> Mapping PHP5.6 to PHP"
-
-sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
-
-
 FILENAME="/usr/bin/subl"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Sublime Text (Stable)"
@@ -39,6 +34,17 @@ for FILENAME in $SRCDIRECTORY/*.colorscheme; do
     NEWFILENAME=$(basename "$FILENAME")
     cp -f "$HOME/Code/Personal/linux-setup/data/konsole/$NEWFILENAME" "$DIRECTORY/$NEWFILENAME"
 done
+
+
+FILENAME="/usr/bin/google-chrome"
+if [[ ! -f "$FILENAME" ]] ; then
+    headline " -> Installing Chrome"
+    cd ~ && wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" -O "google-chrome-stable_current_amd64.deb"
+    sudo dpkg -i google-chrome-stable_current_amd64.deb
+    sudo apt-get -f install
+    rm google-chrome-stable_current_amd64.deb
+    echo
+fi
 
 
 FILENAME="/usr/bin/teamviewer"

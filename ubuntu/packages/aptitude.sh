@@ -151,3 +151,8 @@ sudo apt install ${packagelist[@]}
 headline " -> Mapping Silversearch to ACK"
 
 sudo ln -sf /usr/bin/ag /usr/bin/ack
+
+
+headline " -> Mapping PHP5.6 to PHP"
+
+sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
