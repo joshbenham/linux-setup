@@ -1,8 +1,8 @@
 #!/bin/bash
 
-declare -A repositorylist
+declare -A repositories
 
-repositorylist=(
+repositories=(
 
 # Backports
 # ------------------------
@@ -29,11 +29,11 @@ repositorylist=(
 
 )
 
-for key in "${!repositorylist[@]}" ; do
+for key in "${!repositories[@]}" ; do
     if ! grep -q "$key" /etc/apt/sources.list /etc/apt/sources.list.d/*; then
-        ask_question " <- Do you want to install the ${repositorylist[$key]} repository? [y|n] "
+        ask_question " <- Do you want to install the ${repositories[$key]} repository? [y|n] "
         if said_yes ; then
-            sudo add-apt-repository ${repositorylist[$key]}
+            sudo add-apt-repository ${repositories[$key]}
         fi
     fi
 done

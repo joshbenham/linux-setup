@@ -16,7 +16,7 @@ fi
 
 headline " -> Installing Composer Packages"
 
-packagelist=(
+packages=(
 
 # FASTER COMPOSER
 # ------------------------
@@ -42,4 +42,4 @@ phploc/phploc=*
 
 )
 
-composer global require ${packagelist[@]}
+composer global require ${packages[@]}

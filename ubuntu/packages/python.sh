@@ -2,7 +2,7 @@
 
 headline " -> Installing Python Packages"
 
-packagelist=(
+packages=(
 
 # TOOLS
 # ------------------------
@@ -14,4 +14,4 @@ codemod
 
 )
 
-sudo pip install ${packagelist[@]}
+sudo pip install ${packages[@]}

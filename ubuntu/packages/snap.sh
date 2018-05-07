@@ -2,10 +2,10 @@
 
 headline " -> Installing Snap Packages"
 
-packagelist=(
+packages=(
 
 spotify
 
 )
 
-sudo snap install ${packagelist[@]}
+sudo snap install ${packages[@]}

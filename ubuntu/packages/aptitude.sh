@@ -9,7 +9,7 @@ fi
 
 headline " -> Installing Aptitude Packages"
 
-packagelist=(
+packages=(
 
 # TOOLS
 # ------------------------
@@ -75,12 +75,6 @@ kcolorchooser
 kazam
 
 
-# Go
-# ------------------------
-
-golang
-
-
 # LAMP
 # ------------------------
 
@@ -124,28 +118,12 @@ php7.2-zip
 php7.2
 libapache2-mod-php7.2
 
-php5.6-cgi
-php5.6-curl
-php5.6-gd
-php5.6-intl
-php5.6-json
-php5.6-mbstring
-php5.6-mcrypt
-php5.6-mysql
-php5.6-soap
-php5.6-sqlite3
-php5.6-xml
-php5.6-xmlrpc
-php5.6-zip
-php5.6
-libapache2-mod-php5.6
-
 phpmyadmin
 mysql-workbench
 
 )
 
-sudo apt install ${packagelist[@]}
+sudo apt install ${packages[@]}
 
 
 headline " -> Mapping Silversearch to ACK"
@@ -153,6 +131,6 @@ headline " -> Mapping Silversearch to ACK"
 sudo ln -sf /usr/bin/ag /usr/bin/ack
 
 
-headline " -> Mapping PHP5.6 to PHP"
+headline " -> Mapping PHP7.0 to PHP"
 
-sudo ln -sf /usr/bin/php5.6 /etc/alternatives/php
+sudo ln -sf /usr/bin/php7.0 /etc/alternatives/php

@@ -11,7 +11,7 @@ if [[ ! -f "$FILENAME" ]] ; then
 fi
 
 
-headline " -> Setting up Sublime Text 3 packages"
+headline " -> Setting up Sublime Text 3 Packages"
 
 DIRECTORY="$HOME/.config/sublime-text-3/Installed Packages"
 FILENAME="$DIRECTORY/Package Control.sublime-package"
@@ -19,6 +19,9 @@ if [[ ! -f "$FILENAME" ]] ; then
     cd "$DIRECTORY"
     wget "http://sublime.wbond.net/Package%20Control.sublime-package" -O "$FILENAME"
 fi
+
+
+headline " -> Setting up Sublime Text 3 Themes"
 
 DIRECTORY="$HOME/.config/sublime-text-3/Packages/User/"
 ln -sf "$HOME/Code/Personal/linux-setup/data/sublime-text-3/Package Control.sublime-settings" "$DIRECTORY/Package Control.sublime-settings"
@@ -36,28 +39,6 @@ for FILENAME in $SRCDIRECTORY/*.colorscheme; do
 done
 
 
-FILENAME="/usr/bin/google-chrome"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Chrome"
-    cd ~ && wget "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" -O "google-chrome-stable_current_amd64.deb"
-    sudo dpkg -i google-chrome-stable_current_amd64.deb
-    sudo apt-get -f install
-    rm google-chrome-stable_current_amd64.deb
-    echo
-fi
-
-
-FILENAME="/usr/bin/teamviewer"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing TeamViewer"
-    cd ~ && wget "http://download.teamviewer.com/download/teamviewer_i386.deb" -O "teamviewer_i386.deb"
-    sudo dpkg -i teamviewer_i386.deb
-    sudo apt-get -f install
-    rm teamviewer_i386.deb
-    echo
-fi
-
-
 FILENAME="/opt/wavebox/Wavebox"
 if [[ ! -f "$FILENAME" ]] ; then
     headline " -> Installing Wavebox"
@@ -65,17 +46,6 @@ if [[ ! -f "$FILENAME" ]] ; then
     echo "deb https://wavebox.io/dl/client/repo/ x86_64/" | sudo tee --append /etc/apt/sources.list.d/repo.list
     sudo apt update
     sudo apt install wavebox
-    echo
-fi
-
-
-FILENAME="/usr/bin/screamingfrogseospider"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing ScreamingFrog"
-    cd ~ && wget "https://www.screamingfrog.co.uk/products/seo-spider/screamingfrogseospider_6.0_all.deb" -O "screamfrogseospider_6.0_all.deb"
-    sudo dpkg -i screamfrogseospider_6.0_all.deb
-    sudo apt-get -f install
-    rm screamfrogseospider_6.0_all.deb
     echo
 fi
 

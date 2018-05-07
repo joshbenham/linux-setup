@@ -11,7 +11,7 @@ fi
 
 headline " -> Installing Node Packages"
 
-packagelist=(
+packages=(
 
 # TOOLS
 # ------------------------
@@ -34,4 +34,4 @@ eslint-plugin-vue
 
 )
 
-sudo npm -g install ${packagelist[@]}
+sudo npm -g install ${packages[@]}
