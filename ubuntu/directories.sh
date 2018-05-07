@@ -22,10 +22,8 @@ FOLDERS=(
 )
 
 for FOLDER in "${FOLDERS[@]}"; do
-    ask_question " <- Would you like to setup the $FOLDER folder [y|n]"
-    if said_yes; then
-        COMMAND="ln -sf /media/$NAME/Data/$FOLDER /home/$NAME/$FOLDER"
-	$COMMAND
-    fi
+    headline " -> Mapping Directory $FOLDER"
+    COMMAND="ln -sf /media/$NAME/Data/$FOLDER /home/$NAME/$FOLDER"
+    $COMMAND
 done
 

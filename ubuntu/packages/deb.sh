@@ -1,8 +1,8 @@
 #!/bin/bash
 
-declare -A packages
+declare -A debs
 
-packages=(
+debs=(
 
 [/usr/bin/google-chrome]=https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 [/usr/bin/teamviewer]=http://download.teamviewer.com/download/teamviewer_i386.deb
@@ -10,12 +10,12 @@ packages=(
 
 )
 
-for key in "${!packages[@]}" ; do
+for key in "${!debs[@]}" ; do
 
     if [[ ! -f "$key" ]] ; then
-        FILE=${packages[$key]##*/}
+        FILE=${debs[$key]##*/}
         headline " -> Installing $FILE"
-        cd ~ && wget "${packages[$key]}" -O "$FILE"
+        cd ~ && wget "${debs[$key]}" -O "$FILE"
         sudo dpkg -i "$FILE"
         sudo apt-get -f install
         rm "$FILE"
