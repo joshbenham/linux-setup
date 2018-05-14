@@ -63,6 +63,7 @@ chromium-browser
 
 vim
 vim-gtk
+neovim
 sublime-text
 
 
