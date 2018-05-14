@@ -23,6 +23,7 @@ hirak/prestissimo
 
 laravel/installer
 laravel/envoy=~1.0
+cpriego/valet-linux
 
 
 # TESTING

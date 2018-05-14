@@ -37,11 +37,14 @@ qbittorrent
 filezilla
 
 
-# LIBRARIES
+# DEPENDENCIES
 # ------------------------
 
 libgcrypt20-dev
 libnotify-bin
+libnss3-tools 
+jq 
+xsel
 
 
 # PACKAGE MANAGERS
