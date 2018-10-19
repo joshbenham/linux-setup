@@ -1,28 +1,5 @@
 #!/bin/bash
 
-FILENAME="/usr/bin/code"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing VS Code"
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main" > /etc/apt/sources.list.d/vscode.list'
-    sudo apt-get update
-    sudo apt-get install code
-    echo
-fi
-
-
-FILENAME="/usr/bin/subl"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Sublime Text (Stable)"
-    wget -qO - https://download.sublimetext.com/sublimehq-pub.gpg | sudo apt-key add -
-    echo "deb https://download.sublimetext.com/ apt/stable/" | sudo tee /etc/apt/sources.list.d/sublime-text.list
-    sudo apt-get update
-    sudo apt-get install sublime-text
-    echo
-fi
-
-
 headline " -> Setting up Sublime Text 3 Packages"
 
 DIRECTORY="$HOME/.config/sublime-text-3/Installed Packages"
@@ -49,17 +26,6 @@ for FILENAME in $SRCDIRECTORY/*.colorscheme; do
     NEWFILENAME=$(basename "$FILENAME")
     cp -f "$HOME/Code/Personal/linux-setup/data/konsole/$NEWFILENAME" "$DIRECTORY/$NEWFILENAME"
 done
-
-
-FILENAME="/opt/wavebox/Wavebox"
-if [[ ! -f "$FILENAME" ]] ; then
-    headline " -> Installing Wavebox"
-    sudo wget -qO - https://wavebox.io/dl/client/repo/archive.key | sudo apt-key add -
-    echo "deb https://wavebox.io/dl/client/repo/ x86_64/" | sudo tee --append /etc/apt/sources.list.d/repo.list
-    sudo apt update
-    sudo apt install wavebox
-    echo
-fi
 
 
 FILENAME="$HOME/.nerd_fonts/install.sh"

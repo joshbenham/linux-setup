@@ -33,7 +33,6 @@ klinkstatus
 silversearcher-ag
 gettext
 vlc
-qbittorrent
 filezilla
 
 
@@ -67,7 +66,6 @@ chromium-browser
 vim
 vim-gtk
 neovim
-sublime-text
 
 
 # GRAPHICAL
