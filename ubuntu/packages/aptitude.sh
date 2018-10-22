@@ -14,14 +14,12 @@ packages=(
 # TOOLS
 # ------------------------
 
-fish
 stow
 curl
 ctags
 htop
 httpie
 unrar
-qtpass
 bash-builtins
 bash-completion
 scrot
