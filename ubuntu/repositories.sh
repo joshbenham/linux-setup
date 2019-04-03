@@ -25,6 +25,7 @@ repositories=(
 [libreoffice/ppa]=ppa:libreoffice/ppa
 [ubuntu-mozilla-daily/ppa]=ppa:ubuntu-mozilla-daily/ppa
 [otto-kesselgulasch/gimp]=ppa:otto-kesselgulasch/gimp
+[kdenlive/kdenlive-stable]=ppa:kdenlive/kdenlive-stable
 
 )
 
