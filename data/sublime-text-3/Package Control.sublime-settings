@@ -34,7 +34,8 @@
 		"SublimeLinter-contrib-lessc",
 		"SublimeLinter-jshint",
 		"SublimeLinter-phpcs",
-		"Theme - Spacegray"
+		"Theme - Spacegray",
+		"Vue Syntax Highlight"
 	],
 	"repositories":
 	[
