@@ -6,7 +6,6 @@ packages=(
 
 spotify
 insomnia
-wavebox
 discord
 
 )
