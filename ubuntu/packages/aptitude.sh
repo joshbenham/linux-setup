@@ -27,7 +27,6 @@ neofetch
 virtualbox
 trimage
 thunderbird
-klinkstatus
 silversearcher-ag
 gettext
 vlc
