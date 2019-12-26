@@ -16,7 +16,6 @@ repositories=(
 [ondrej/php]=ppa:ondrej/php
 [ondrej/apache2]=ppa:ondrej/apache2
 [git-core/ppa]=ppa:git-core/ppa
-[dawidd0811/neofetch]=ppa:dawidd0811/neofetch
 
 
 # Apps
