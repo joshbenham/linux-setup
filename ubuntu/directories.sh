@@ -3,7 +3,6 @@
 NAME=`whoami`
 FOLDERS=(
 
-".password-store"
 ".thunderbird"
 
 "Applications"
@@ -23,7 +22,7 @@ FOLDERS=(
 
 for FOLDER in "${FOLDERS[@]}"; do
     headline " -> Mapping Directory $FOLDER"
-    COMMAND="ln -sf /media/$NAME/Data/$FOLDER /home/$NAME/$FOLDER"
+    COMMAND="ln -sf /media/$NAME/Data/$FOLDER /home/$NAME"
     $COMMAND
 done
 
