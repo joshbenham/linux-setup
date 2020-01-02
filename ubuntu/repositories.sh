@@ -16,6 +16,7 @@ repositories=(
 [ondrej/php]=ppa:ondrej/php
 [ondrej/apache2]=ppa:ondrej/apache2
 [git-core/ppa]=ppa:git-core/ppa
+[phpmyadmin/ppa]=ppa:phpmyadmin/ppa
 
 
 # Apps
