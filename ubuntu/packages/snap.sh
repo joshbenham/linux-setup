@@ -4,6 +4,7 @@ headline " -> Installing Snap Packages"
 
 packages=(
 
+chromium
 spotify
 insomnia
 discord

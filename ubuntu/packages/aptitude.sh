@@ -53,7 +53,6 @@ python-pip
 
 firefox
 firefox-trunk
-chromium-browser
 
 
 # EDITORS
