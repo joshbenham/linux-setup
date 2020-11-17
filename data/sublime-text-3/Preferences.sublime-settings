@@ -4,8 +4,8 @@
 	"caret_extra_bottom": 6,
 	"caret_extra_top": 6,
 	"caret_style": "phase",
-	"color_scheme": "Packages/Rainglow/rainglow/Laracasts Contrast (rainglow).tmTheme",
-	"draw_white_space": "all",
+	"color_scheme": "Packages/Material Theme/schemes/Material-Theme-Palenight.tmTheme",
+	"draw_white_space": "none",
 	"ensure_newline_at_eof_on_save": true,
 	"fade_fold_buttons": false,
 	"folder_exclude_patterns":
@@ -14,9 +14,7 @@
 		".git",
 		".hg",
 		"CVS",
-		"_build",
 		"dist",
-		"build",
 		"site",
 		"report",
 		"app/storage/logs",
@@ -32,7 +30,7 @@
 	[
 		"subpixel_antialias"
 	],
-	"font_size": 11,
+	"font_size": 13,
 	"highlight_line": true,
 	"ignored_packages":
 	[
@@ -45,8 +43,7 @@
 		72,
 		79
 	],
-	"spacegray_fileicons": true,
-	"theme": "Spacegray.sublime-theme",
+	"theme": "Material-Theme-Palenight.sublime-theme",
 	"translate_tabs_to_spaces": true,
 	"trim_trailing_white_space_on_save": true,
 	"update_check": false

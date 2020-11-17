@@ -12,12 +12,6 @@ headline " -> Installing Composer Packages"
 
 packages=(
 
-# FASTER COMPOSER
-# ------------------------
-
-hirak/prestissimo
-
-
 # LARAVEL
 # ------------------------
 
