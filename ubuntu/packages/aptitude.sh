@@ -133,7 +133,6 @@ libapache2-mod-php7.4
 
 phpmyadmin
 mysql-workbench
-mysqltuner
 
 )
 

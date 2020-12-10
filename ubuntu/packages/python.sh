@@ -8,9 +8,6 @@ packages=(
 # ------------------------
 
 glances
-httpstat
-clint
-codemod
 
 )
 
