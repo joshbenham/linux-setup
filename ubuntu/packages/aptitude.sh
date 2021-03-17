@@ -42,12 +42,6 @@ jq
 xsel
 
 
-# PACKAGE MANAGERS
-# ------------------------
-
-pip
-
-
 # BROWSERS
 # ------------------------
 
