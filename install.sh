@@ -8,7 +8,6 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
     echo "Usage:"
     echo "  help                    Show the help"
     echo "  ubuntu                  Install Everything"
-    echo "  ubuntu-directories      Set up the Directories"
     echo "  ubuntu-repositories     Install Ubuntu Repositories"
     echo "  ubuntu-other            Install Other Packages (Source/Copy)"
     echo "  ubuntu-aptitude         Install Aptitude Packages"
@@ -19,7 +18,6 @@ if [[ -z $1 ]] || [[ $1 = "help" ]] ; then
 fi
 
 if [[ $1 = "ubuntu" ]] ; then
-    source ubuntu/directories.sh
     source ubuntu/repositories.sh
     source ubuntu/packages/other.sh
     source ubuntu/packages/aptitude.sh
@@ -27,10 +25,6 @@ if [[ $1 = "ubuntu" ]] ; then
     source ubuntu/packages/composer.sh
     source ubuntu/packages/node.sh
     source ubuntu/packages/snap.sh
-fi
-
-if [[ $1 = "ubuntu-directories" ]] ; then
-    source ubuntu/directories.sh
 fi
 
 if [[ $1 = "ubuntu-repositories" ]] ; then
