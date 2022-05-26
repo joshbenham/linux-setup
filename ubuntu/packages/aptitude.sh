@@ -108,6 +108,20 @@ php7.4-zip
 php7.4
 libapache2-mod-php7.4
 
+php8.0-cgi
+php8.0-curl
+php8.0-gd
+php8.0-intl
+php8.0-mbstring
+php8.0-mysql
+php8.0-soap
+php8.0-sqlite3
+php8.0-xml
+php8.0-xmlrpc
+php8.0-zip
+php8.0
+libapache2-mod-php8.0
+
 phpmyadmin
 
 )
