@@ -6,5 +6,5 @@
 
 ```bash
 $ sudo apt-get install git
-$ git clone https://github.com/joshbenham/linux-setup.git
+$ git clone --depth 1 git@github.com:joshbenham/linux-setup.git
 ```
