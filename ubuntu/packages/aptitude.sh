@@ -30,6 +30,7 @@ silversearcher-ag
 gettext
 vlc
 filezilla
+neovim
 
 
 # DEPENDENCIES
