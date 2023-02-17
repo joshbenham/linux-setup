@@ -25,10 +25,8 @@ bash-completion
 scrot
 virtualbox
 trimage
-thunderbird
 silversearcher-ag
 gettext
-vlc
 filezilla
 neovim
 
