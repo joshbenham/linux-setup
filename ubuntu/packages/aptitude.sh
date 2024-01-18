@@ -23,7 +23,6 @@ unrar
 bash-builtins
 bash-completion
 scrot
-virtualbox
 trimage
 silversearcher-ag
 gettext
