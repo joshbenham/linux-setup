@@ -18,7 +18,6 @@ packages=(
 
 npm
 npm-check
-yarn
 gulp
 bower
 
