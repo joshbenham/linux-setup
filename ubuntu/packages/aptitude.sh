@@ -51,7 +51,6 @@ firefox-trunk
 # ------------------------
 
 vim
-vim-gtk
 
 
 # GRAPHICAL
