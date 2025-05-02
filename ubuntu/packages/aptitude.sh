@@ -105,33 +105,19 @@ php7.4-zip
 php7.4
 libapache2-mod-php7.4
 
-php8.0-cgi
-php8.0-curl
-php8.0-gd
-php8.0-intl
-php8.0-mbstring
-php8.0-mysql
-php8.0-soap
-php8.0-sqlite3
-php8.0-xml
-php8.0-xmlrpc
-php8.0-zip
-php8.0
-libapache2-mod-php8.0
-
-php8.1-cgi
-php8.1-curl
-php8.1-gd
-php8.1-intl
-php8.1-mbstring
-php8.1-mysql
-php8.1-soap
-php8.1-sqlite3
-php8.1-xml
-php8.1-xmlrpc
-php8.1-zip
-php8.1
-libapache2-mod-php8.1
+php8.4-cgi
+php8.4-curl
+php8.4-gd
+php8.4-intl
+php8.4-mbstring
+php8.4-mysql
+php8.4-soap
+php8.4-sqlite3
+php8.4-xml
+php8.4-xmlrpc
+php8.4-zip
+php8.4
+libapache2-mod-php8.4
 
 phpmyadmin
 
