@@ -53,14 +53,6 @@ firefox-trunk
 vim
 
 
-# GRAPHICAL
-# ------------------------
-
-gimp
-kcolorchooser
-kazam
-
-
 # LAMP
 # ------------------------
 
@@ -89,22 +81,6 @@ php7.0-zip
 php7.0
 libapache2-mod-php7.0
 
-php7.4-bcmath
-php7.4-cgi
-php7.4-curl
-php7.4-gd
-php7.4-intl
-php7.4-json
-php7.4-mbstring
-php7.4-mysql
-php7.4-soap
-php7.4-sqlite3
-php7.4-xml
-php7.4-xmlrpc
-php7.4-zip
-php7.4
-libapache2-mod-php7.4
-
 php8.4-cgi
 php8.4-curl
 php8.4-gd
@@ -118,8 +94,6 @@ php8.4-xmlrpc
 php8.4-zip
 php8.4
 libapache2-mod-php8.4
-
-phpmyadmin
 
 )
 
